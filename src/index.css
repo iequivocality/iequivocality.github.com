@@ -1,7 +1,12 @@
+html {
+  font-size: 14px;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', 'sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #101A36;  
+  background-image: linear-gradient(to bottom, #101A36, #000);
+  user-select: none;
 }

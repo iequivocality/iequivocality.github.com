@@ -8,6 +8,17 @@
   src: url('./assets/fonts/SawarabiGothic-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'BigJohn';
+  src: url('./assets/fonts/BigJohn.otf');
+}
+
+@font-face {
+  font-family: 'SlimJoe';
+  src: url('./assets/fonts/SlimJoe.otf');
+}
+/* #52C9ED */
+
 .App {
   display: flex;
   justify-content: center;
@@ -15,7 +26,31 @@
   height: 100vh;
 }
 
-h2 {
-  font-family: 'SawarabiGothic';
+.Page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Page-Title {
+  font-size: 3.5rem;
+  font-family: 'BigJohn';
   color: #E53D77;
+}
+
+.Page-Subtitle {
+  margin-bottom: 4px;
+  font-size: 1rem;
+  font-family: 'SlimJoe';
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.Page-Buttonbar {
+  margin: 4px 0px;
+  min-width: 15vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
