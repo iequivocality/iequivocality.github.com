@@ -3,22 +3,27 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
 
     .moon {
+        position: relative;
+        z-index: 2;
+
         img {
-            width: 80px;
-            height: 80px;
+            width: 150px;
+            height: 150px;
         }
     }
 
     .moonlight {
         position: absolute;
+        z-index: 1;
+        opacity: 0.5;
 
         img {
-            width: 300px;
-            height: 300px;
+            width: 600px;
+            height: 600px;
         }
     }
 }
