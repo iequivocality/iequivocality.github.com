@@ -7,6 +7,7 @@ body {
   font-family: 'Roboto', 'sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to bottom, #101A36, #000);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to top, #04112F, #101A36 65%, #000);
   user-select: none;
 }

@@ -30,11 +30,61 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+}
+
+.Page-Foreground {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  z-index : 4;
+}
+
+/* .Page-Background {
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index : 1;
+  background-size: 80%;
+   background-image: url('./assets/img/starrysky.svg');
+} */
+
+.Page-Moon {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: auto;
+  margin-right: 100px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.Page-MoonLight {
+  width: 280px;
+  height: 280px;
+}
+
+.Page-Ocean {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #DCAB66, #E36538 5%, #E36538 5%, #E74832)
 }
 
 .Page-Title {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-family: 'BigJohn';
   color: #E53D77;
 }

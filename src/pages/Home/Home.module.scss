@@ -1,0 +1,42 @@
+.home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex : 1;
+}
+
+.homeMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex : 1;
+}
+
+.homeTitleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 40%;
+
+    .homeTitle {
+        font-size: 4rem;
+        font-family: 'BigJohn';
+        color: #E53D77;
+    }
+    
+    .homeSubtitle {
+        margin-bottom: 4px;
+        font-size: 1rem;
+        font-family: 'SlimJoe';
+        font-weight: bold;
+        color: #FFFFFF;
+    }
+}
+
+.homeRightContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 60%;
+}
