@@ -39,7 +39,7 @@ const Home : FC = () => {
                     <div className={styles.homeSubtitle}>aidoru fan</div>
                 </div>
                 <div className={styles.homeRightContainer}>
-                    <Moon top={-50} right={-50} onChangePosition={(v : Vector) => setMoonPosition(v)}></Moon>
+                    <Moon top={0} right={50} onChangePosition={(v : Vector) => setMoonPosition(v)}></Moon>
                 </div>
             </main>
             <footer className={styles.homeFooter}>

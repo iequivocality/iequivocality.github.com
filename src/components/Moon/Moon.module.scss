@@ -3,16 +3,15 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    width: 600px;
-    height: 600px;
+    width: 80vh;
+    height: 80vh;
 
     .moon {
-        position: relative;
         z-index: 2;
 
         img {
-            width: 150px;
-            height: 150px;
+            width: 20vh;
+            height: 20vh;
         }
     }
 
@@ -22,8 +21,8 @@
         opacity: 0.5;
 
         img {
-            width: 600px;
-            height: 600px;
+            width: 80vh;
+            height: 80vh;
         }
     }
 }
