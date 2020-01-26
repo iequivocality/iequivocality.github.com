@@ -34,21 +34,3 @@
   width: 100vw;
   height: 100vh;
 }
-
-.Page-Foreground {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index : 4;
-}
-
-.Page-Ocean {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 20vh;
-  width: 100vw;
-  background-image: linear-gradient(to bottom, #DCAB66, #E36538 5%, #E36538 5%, #E74832)
-}
