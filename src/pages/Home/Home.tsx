@@ -1,16 +1,11 @@
-import React, { FC, useRef, CSSProperties, useState } from 'react';
+import React, { FC, CSSProperties, useState } from 'react';
 import styles from './Home.module.scss';
 import Moon from '../../components/Moon';
-import { useMouse } from 'react-use';
 import { IoLogoTwitter, IoLogoGithub } from 'react-icons/io';
 import reflection from '../../assets/img/reflection.svg';
 import Vector from '../../model/Vector';
 
 const Home : FC = () => {
-    // let ref = useRef(null);
-    // let mousePosition = useMouse(ref);
-    // let relativeX = mousePosition.elX;
-    // let relativeY = mousePosition.elY;
     let [moonPosition, setMoonPosition] = useState<Vector>({ x : 0, y : 0});
 
     console.log("mp", moonPosition)
@@ -43,7 +38,7 @@ const Home : FC = () => {
                 </div>
             </main>
             <footer className={styles.homeFooter}>
-                <img className={styles.reflection} src={reflection} style={reflectionStyle}></img>
+                <img className={styles.reflection} src={reflection} style={reflectionStyle} alt="reflection"></img>
             </footer>
         </div>
     );

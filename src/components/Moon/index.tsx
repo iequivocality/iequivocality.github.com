@@ -12,16 +12,17 @@ interface MoonProps {
 }
 
 const Moon : FC<MoonProps> = (props : MoonProps) => {
+    let { onChangePosition } = props;
     let ref = useRef(null);
     let mousePosition = useMouse(ref);
     let relativeX = mousePosition.elX;
     let relativeY = mousePosition.elY;
 
     useEffect(() => {
-        if (props.onChangePosition) {
-            props.onChangePosition({ x : relativeX, y : relativeY});
+        if (onChangePosition) {
+            onChangePosition({ x : relativeX, y : relativeY});
         }
-    }, [relativeX, relativeY]);
+    }, [relativeX, relativeY, onChangePosition]);
 
     let moonStyle : CSSProperties = {
         transform : `translate3d(${Math.min(20, relativeX/50) * -1}px,${Math.min(20, relativeY/50) * -1}px,0)`,
@@ -32,10 +33,10 @@ const Moon : FC<MoonProps> = (props : MoonProps) => {
     return (
         <div className={styles.moonContainer} ref={ref} style={moonStyle}>
             <div className={styles.moon}>
-                <img src={moon}></img>
+                <img src={moon} alt="moon"></img>
             </div>
             <div className={styles.moonlight}>
-                <img src={moonlight}></img>
+                <img src={moonlight} alt="moonlight"></img>
             </div>
         </div>
     );
